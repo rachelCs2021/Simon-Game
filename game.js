@@ -7,9 +7,21 @@ let userClickedPattern = []
 let started = false;
 let level = 0;
 
-$("body").keypress(function () {
+
+// $("body").keypress(function () {
+//     if (!started) {
+//         $("h1").text(`Level ${level}`);
+//         nextSequence();
+//         started = true;
+//     }
+// })
+
+$("h1").after(`<button class="start-game">Start Game </button>`)
+
+$("button").click(function () {
     if (!started) {
         $("h1").text(`Level ${level}`);
+        $("button").css("display", "none")
         nextSequence();
         started = true;
     }
@@ -66,7 +78,8 @@ function checkAnswer(currentLevel) {
     } else {
         playSound("wrong")
         $("body").addClass("game-over")
-        $("h1").text("Game Over, Press Any Key to Restart")
+        $("h1").text("Game Over ):")
+        $("button").css("display", "block")
 
         setTimeout(function () {
             $("body").removeClass("game-over");
