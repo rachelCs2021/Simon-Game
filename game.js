@@ -7,17 +7,6 @@ let userClickedPattern = []
 let started = false;
 let level = 0;
 
-
-// $("body").keypress(function () {
-//     if (!started) {
-//         $("h1").text(`Level ${level}`);
-//         nextSequence();
-//         started = true;
-//     }
-// })
-
-$("h1").after(`<button class="start-game">Start Game </button>`)
-
 $("button").click(function () {
     if (!started) {
         $("h1").text(`Level ${level}`);
