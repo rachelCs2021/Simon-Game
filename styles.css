@@ -65,7 +65,7 @@ body {
   background-color: grey;
 }
 
-@media screen and (max-width: 1122px)  {
+@media screen and (max-width: 1122px) and (min-width:750px) {
   .btn{
     height: 120px;
     width: 120px;
@@ -76,32 +76,44 @@ body {
     font-size: 2rem;
     margin: 10px;
   }
+  .start-game{
+    margin-top: 10%;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
   .btn{
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     margin: 7px;
   }
   #level-title{
     line-height: 1.5;
     margin-bottom: 30px;
   }
+  .start-game{
+    margin-top: 17%;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 500px)  {
   .btn{
-    height: 60px;
-    width: 60px;
+    height: 90px;
+    width: 90px;
     margin: 5px;
   }
   #level-title{
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 60px;
   }
+  .start-game{
+    margin-top: 15%;
+    font-size: 1.5rem;
+  }
   .container{
     width: 80%;
-    background-color: aqua;
   }
 }
